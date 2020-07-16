@@ -1,0 +1,180 @@
+html{
+	font-size: 62.5%; /** reset para rems- 62.5% =10px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	line-height: 2;
+}
+
+/**  Globales **/
+img {
+    max-width: 100%;
+}
+.contenedor{
+	width: 95%;
+	max-width: 120rem;
+	margin: 0 auto;
+
+}
+h1{
+	font-size: 3.8rem;
+}
+h2{
+	font-size: 3.4rem;
+}
+h3{
+	font-size: 3rem;
+}
+/** utilidades**/
+.seccion{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.fw-300 {
+	font-weight: 500;
+	
+}
+.centrar-texto{
+	text-align: center;
+}
+/** Botones **/
+.boton {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton-amarillo {
+    background-color: #E08709;
+}
+.boton-verde {
+    background-color: #71B100;
+}
+/* header */
+.site-header.inicio{
+	background-image: url(img/header.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: 20vh;
+	/*min-height: 60rem;*/
+
+}
+.site-header.menu{
+	
+}
+.contenido-header{
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; /** posicion donde se vera la barra y el logo **/
+
+}
+
+@media (min-width: 768px) {
+    .contenido-header{
+        text-align: left;
+    }
+}
+
+.contenido-header h1{
+	color:white;
+
+	color: rgba(255, 254, 254, 0.88);
+	padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+
+.barra{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+}
+.barra img {
+	width: 60rem;
+	height: 30rem;
+}
+/** navegacion **/
+.navegacion a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 3rem;
+	margin-right: 4rem;
+	
+}
+.navegacion a:hover {
+	color:#e3e90af7;
+}
+.navegacion a:last-of-type {
+	margin: 10;
+}
+/** Mobile Menu **/
+.mobile-menu img {
+    width: 5rem;
+}
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+.navegacion:target {
+    display: block;
+}
+.navegacion {
+    display: none;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        display: block;
+    }
+}
+
+/** Iconos Nosotros **/
+@media (min-width: 200px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.icono {
+	text-align: center;
+}
+@media (min-width: 200px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+.icono h3{
+	text-transform: uppercase;
+}
+
+.icono img {
+	width: 200px;
+	height: 200px;
+/*
+ }.icono1 {
+	text-align: center;
+
+}
+*/
